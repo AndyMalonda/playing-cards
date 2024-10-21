@@ -1,0 +1,63 @@
+form {
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.form-field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ng-dirty.ng-invalid, .ng-touched.ng-invalid {
+    border-color: red;
+    border-width: 1px;
+}
+
+.error {
+    color: red;
+    font-size: x-small
+}
+
+.preview, .main {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.preview {
+    width: 300px;
+    margin: 20px;
+}
+
+.main {
+    width: 40%;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-container.left, .button-container.right {
+    display: inline-block;
+    width: 50%;
+}
+
+.button-container .right {
+    text-align: right;
+}

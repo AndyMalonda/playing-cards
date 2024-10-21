@@ -1,0 +1,21 @@
+<div id="container">
+    <form (submit)="login()" [formGroup]="loginFormGroup">
+        <mat-form-field>
+            <mat-label for="username">Username</mat-label>
+            <input matInput type="text" id="username" name="username" placeholder="Username" formControlName="username"
+                required />
+            <mat-error *ngIf="isFieldInvalid('username')">This field is required</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="password">Password</mat-label>
+            <input matInput type="password" id="password" name="password" placeholder="Password"
+                formControlName="password" required />
+            <mat-error *ngIf="isFieldInvalid('password')">This field is required</mat-error>
+        </mat-form-field>
+        @if (invalidCredentials) {
+            <mat-error>Invalid credentials</mat-error>
+        }
+        <button mat-raised-button color="primary" type="submit">Login</button>
+        <button mat-raised-button color="accent" (click)="forceLogin()">ForceLogin</button>
+    </form>
+</div>

@@ -1,0 +1,21 @@
+h1 {
+    background-color: black;
+    color: white;
+}
+
+#cards-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    margin-top: 40px;
+    text-align: center;
+}
+
+app-playing-card {
+    cursor: pointer;
+}
